@@ -56,4 +56,66 @@ body {
   cursor: pointer;
   font-size: 1.2rem;
   color: var(--mainYellow);
+
+}
+
+.clear-cart-btn {
+    text-align: right;
+    margin-top: 2px;
+    margin-left: auto;
+  }
+/* col-10 mt-2 ml-sm-5 ml-md-auto col-sm-8 text-capitalize text-right */
+@media screen and (max-width: 1400px) {
+  .clear-cart-btn {
+    
+    text-align: right;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .clear-cart-btn {
+    
+    text-align: right;
+    margin-left: auto;
+  }
+} 
+@media screen and (max-width: 991px) {
+  .clear-cart-btn {
+    
+    text-align: center;
+    margin-left: 7.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .clear-cart-btn {
+    
+    text-align: center;
+    margin-left: 5.4rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .clear-cart-btn {
+    text-align: center;
+    margin-left: 2.6rem;
+  }
+}
+
+/* Footer styling */
+
+.main-footer {
+  background: var(--mainBlue);
+  color: var(--mainWhite) !important;
+}
+
+.main-footer h5,
+.main-yellow {
+  color: var(--mainYellow);
+}
+.main-footer p a {
+  color: var(--mainWhite);
+  text-decoration: none;
+}
+.fa-Iconz {
+  color: var(--mainWhite) !important;
+  font-size: 1.2rem;
 }

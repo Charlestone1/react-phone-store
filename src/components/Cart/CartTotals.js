@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../../context";
+import PayPalButton from "./PayPalButton";
 
 const CartTotals = () => {
   const { cartSubTotal, cartTax, cartTotal, clearCart } = useGlobalContext();
@@ -9,8 +10,8 @@ const CartTotals = () => {
     <React.Fragment>
       <div className="container">
         <div className="row">
-          <div className="col-10 mt-2 ml-sm-5 ml-md-auto col-sm-8 text-capitalize text-right">
-            <Link to="/">
+          <div className=" clear-cart-btn col-10 mt-2 ml-sm-5 ml-md-auto col-sm-8">
+            <Link to="/" >
               <button
                 className="btn btn-outline-danger text-uppercase mb-3 px-5"
                 type="button"
@@ -31,6 +32,9 @@ const CartTotals = () => {
               <span className="text-title">Total: </span>
               <strong>${cartTotal}</strong>
             </h5>
+            <PayPalButton>
+              <p>paypal</p>
+            </PayPalButton>
           </div>
         </div>
       </div>

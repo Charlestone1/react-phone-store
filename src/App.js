@@ -11,6 +11,7 @@ import Cart from "./components/Cart";
 import Default from "./components/Default";
 import { ProductProvider } from "./context";
 import Modal from "./components/Modal";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<Default />} />
         </Routes>
-        <Modal/>
+        <Modal />
+        <Footer />
       </ProductProvider>
     </React.Fragment>
   );

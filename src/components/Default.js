@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import ButtonContainer from "./Button";
 
 const Default = () => {
-  const { pathname } = useLocation();
+  const pathname = useLocation();
   return (
     <div className="container">
       <div className="row">
