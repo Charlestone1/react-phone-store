@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../logo.svg";
+
 import {
   FaEnvelope,
   FaFacebook,
-  FaFax,
   FaGooglePlus,
-  FaInstagram,
   FaLaptop,
   FaLinkedin,
   FaMapMarked,

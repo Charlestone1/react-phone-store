@@ -3,10 +3,8 @@ import { ButtonContainer } from "./Button";
 import { useGlobalContext } from "../context";
 
 const Details = () => {
-  const { productDetails, setProductDetails, addToCart, openModal } =
-    useGlobalContext();
-  const { id, title, img, price, company, count, inCart, info, total } =
-    productDetails;
+  const { productDetails, addToCart, openModal } = useGlobalContext();
+  const { id, title, img, price, company, inCart, info } = productDetails;
   return (
     <div className="container py-5" key={id}>
       {/* Title */}
@@ -20,7 +18,7 @@ const Details = () => {
       {/* Product image */}
       <div className="row">
         <div className="col-10 mx-auto col-md-6 my-3">
-          <img src={img} alt="Product-Image" className="img-fluid" />
+          <img src={img} alt="Product" className="img-fluid" />
         </div>
         {/* Product text details */}
         <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">

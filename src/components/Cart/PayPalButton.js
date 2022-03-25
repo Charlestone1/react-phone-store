@@ -5,7 +5,7 @@ import { useGlobalContext } from "../../context";
 
 const Paypal = () => {
   const navigate = useNavigate();
-  const { cartSubTotal, cartTax, cartTotal, clearCart } = useGlobalContext();
+  const { cartTotal, clearCart } = useGlobalContext();
 
   const onSuccess = (payment) => {
     // Congratulation, it came here means everything's fine!
